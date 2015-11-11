@@ -10,7 +10,9 @@
     "appstax": "latest",
     "jquery-easing-original": "latest",
     "angular-material": "~0.11.4",
-    "material-design-icons": "~2.0.0"
+    "material-design-icons": "~2.0.0",
+    "masonry": "~3.3.2",
+    "isotope": "~2.2.2"
   },
   "devDependencies": {}
 }

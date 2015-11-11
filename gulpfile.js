@@ -16,7 +16,10 @@ gulp.task('clean', function() {
 gulp.task('js', function(){
     gulp.src([
             'bower_components/jquery/dist/jquery.js',
-            'bower_components/bootstrap/dist/js/bootstrap.js'
+            'bower_components/masonry/dist/masonry.pkgd.min.js',
+            'bower_components/isotope/dist/isotope.pkgd.js',
+            'bower_components/bootstrap/dist/js/bootstrap.js',
+            'app/js/app.js'
         ])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('public/js'));
