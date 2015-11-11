@@ -1,27 +1,15 @@
-angular.module('app', [
-    'eehNavigation',
-    'pascalprecht.translate',
-    'ui.bootstrap',
-    'ui.router'
-])
-.config(['eehNavigationProvider', function (eehNavigationProvider) {
-    // Add nested user links to the "foo" menu.
-    eehNavigationProvider
-    .menuItem('foo.user', {
-        text: 'Me',
-        iconClass: 'fa-user'
-    })
-    .menuItem('foo.user.profile', {
-        text: 'User Profile',
-        iconClass: 'fa-user',
-        href: '/user-profile'
-    });
+// external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
-    // Add a menu item that links to "/home" to the "bar" menu.
-    eehNavigationProvider
-    .menuItem('bar.home', {
-        text: 'Home',
-        iconClass: 'fa-home',
-        href: '/home'
-    });
-}]);
+$(document).ready( function() {
+  // init Masonry
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+  });
+  // layout Isotope after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry();
+  });  
+
+});
