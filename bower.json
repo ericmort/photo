@@ -1,0 +1,16 @@
+{
+  "name": "your_project_name",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "jquery": "latest",
+    "angular-sanitize": "latest",
+    "angular-ui-router": "latest",
+    "bootstrap": "latest",
+    "appstax": "latest",
+    "jquery-easing-original": "latest",
+    "angular-material": "~0.11.4",
+    "material-design-icons": "~2.0.0"
+  },
+  "devDependencies": {}
+}
